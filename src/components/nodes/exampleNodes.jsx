@@ -5,7 +5,6 @@ import { BaseNode } from '../BaseNode';
 import { useState } from 'react';
 import { FieldClasses } from '../BaseNode';
 
-// 1. TransformNode: Applies a transformation to the input
 export const TransformNode = ({ id, data }) => {
   const [transformType, setTransformType] = useState(data.transformType || 'Uppercase');
 
@@ -30,7 +29,6 @@ export const TransformNode = ({ id, data }) => {
   );
 };
 
-// 2. FilterNode: Filters input based on a condition
 export const FilterNode = ({ id, data }) => {
   const [filterText, setFilterText] = useState(data.filterText || '');
 
@@ -58,7 +56,6 @@ export const FilterNode = ({ id, data }) => {
   );
 };
 
-// 3. JoinNode: Joins two inputs
 export const JoinNode = ({ id, data }) => {
   return (
     <BaseNode
@@ -76,7 +73,6 @@ export const JoinNode = ({ id, data }) => {
   );
 };
 
-// 4. LogNode: Logs the input to console
 export const LogNode = ({ id, data }) => {
   return (
     <BaseNode
@@ -94,7 +90,6 @@ export const LogNode = ({ id, data }) => {
   );
 };
 
-// 5. NoteNode: A static note for documentation
 export const NoteNode = ({ id, data }) => {
   const [note, setNote] = useState(data.note || 'Type a note...');
 
