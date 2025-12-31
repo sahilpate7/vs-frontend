@@ -6,11 +6,11 @@ import { useState, useRef, useCallback } from 'react';
 import ReactFlow, { Controls, Background, MiniMap } from 'reactflow';
 import { useStore } from '../utils/store';
 import { shallow } from 'zustand/shallow';
-import { InputNode } from '../nodes/inputNode';
-import { LLMNode } from '../nodes/llmNode';
-import { OutputNode } from '../nodes/outputNode';
-import { TextNode } from '../nodes/textNode';
-import { TransformNode, FilterNode, JoinNode, LogNode, NoteNode } from '../nodes/exampleNodes';
+import { InputNode } from '../components/nodes/inputNode';
+import { LLMNode } from '../components/nodes/llmNode';
+import { OutputNode } from '../components/nodes/outputNode';
+import { TextNode } from '../components/nodes/textNode';
+import { TransformNode, FilterNode, JoinNode, LogNode, NoteNode } from '../components/nodes/exampleNodes';
 
 import 'reactflow/dist/style.css';
 

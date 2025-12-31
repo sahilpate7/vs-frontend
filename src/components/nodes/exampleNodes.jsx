@@ -1,9 +1,9 @@
 // exampleNodes.js
 
 import { Position } from 'reactflow';
-import { BaseNode } from '../components/BaseNode';
+import { BaseNode } from '../BaseNode';
 import { useState } from 'react';
-import { FieldClasses } from '../components/BaseNode';
+import { FieldClasses } from '../BaseNode';
 
 // 1. TransformNode: Applies a transformation to the input
 export const TransformNode = ({ id, data }) => {

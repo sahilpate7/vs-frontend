@@ -50,11 +50,10 @@ export const SubmitButton = () => {
                 setPiplelineData(data);
                 openModal();
             } else {
-                alert(`Error: ${data.detail || 'Failed to parse pipeline'}`);
+                alert('Failed to parse pipeline');
             }
         } catch (error) {
-            console.error('Error submitting pipeline:', error);
-            alert('Error submitting pipeline. Please check the console/network.');
+            alert('Error submitting pipeline');
         }
     };
 
